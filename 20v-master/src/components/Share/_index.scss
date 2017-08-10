@@ -1,0 +1,38 @@
+/* 20V - Share */
+
+.share-wrapper {
+    width: 100%;
+    margin: 100px auto 0;
+    position: absolute;
+    bottom: 100px;
+    text-align: center;
+
+    span {
+        clear: both;
+        margin: 0 auto;
+        display: block;
+        text-transform: uppercase;
+    }
+
+    a {
+    	@include border-radius();
+    	@include transition();
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        background-color: transparentize( #FFFFFF, 0.3 );
+        text-align: center;
+        padding-top: 10px;
+        margin: 5px 3px 0;
+
+        img {
+        	display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
+        
+        &:hover {
+	        background-color: #FFFFFF;
+        }
+    }
+}

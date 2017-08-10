@@ -1,0 +1,18 @@
+{
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    "Gruntfile"
+  ],
+  "verbose": true,
+  "ext": "js",
+  "execMap": {
+    "js": "node ./bin/www"
+  },
+  "watch": [
+    "app.js",
+    "components/*",
+    "rss_template.hbs",
+    "routes.js"
+  ]
+}

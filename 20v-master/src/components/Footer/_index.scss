@@ -1,0 +1,37 @@
+/* 20V - FOOTER */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 0;
+    letter-spacing: 0;
+    line-height: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    p {
+		width: 100%;
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+		margin: 0;
+		padding-bottom: 30px;
+		font-family: $font-open;
+	    font-weight: 600;
+	    font-size: 12px;
+	    line-height: 16px;
+	    letter-spacing: -0.04em;
+	    color: #FFFFFF;
+
+		a {
+			color: #FFFFFF;
+			text-decoration: underline;
+		}
+	}
+
+	@media (max-width: 740px) and (orientation: landscape){
+		position: fixed;
+	}
+}

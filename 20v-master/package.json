@@ -1,0 +1,58 @@
+{
+  "name": "20v",
+  "version": "0.1.0",
+  "description": "An app to enjoy a music channel with your favorites videos",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fusenlabs/20v"
+  },
+  "devDependencies": {
+    "babel-core": "^5.4.5",
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-loader": "^5.0.0",
+    "core-js": "^2.0.3",
+    "eslint": "^1.10.3",
+    "eslint-config-rackt": "^1.1.1",
+    "eslint-plugin-react": "^3.15.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "react-hot-loader": "^1.1.5",
+    "webpack": "^1.8.4",
+    "webpack-dev-server": "^1.8.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^5.1.10",
+    "css-loader": "^0.23.0",
+    "exports-loader": "latest",
+    "imports-loader": "latest",
+    "node-sass": "^3.4.2",
+    "react": "^0.14.2",
+    "react-addons-css-transition-group": "^0.14.3",
+    "react-autosuggest": "^2.2.5",
+    "react-dom": "^0.14.2",
+    "react-redux": "^4.0.0",
+    "react-youtube": "^4.1.2",
+    "redux": "^3.0.4",
+    "redux-thunk": "^1.0.0",
+    "sass-loader": "^3.1.2",
+    "spotify-sdk": "0.0.29",
+    "style-loader": "^0.13.0",
+    "youtube-client-wrapper": "git://github.com/Cosmitar/youtube-client-wrapper",
+    "whatwg-fetch": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "node ./bin/build.js",
+    "gh-deploy": "node ./bin/gh-deploy.js",
+    "deploy": "npm run gh-deploy",
+    "predeploy": "npm run build",
+    "lint": "./node_modules/.bin/eslint ."
+  },
+  "author": "@Fūsenlabs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fusenlabs/20v/issues"
+  },
+  "homepage": "https://20v.co"
+}
